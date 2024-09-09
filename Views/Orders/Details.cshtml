@@ -1,0 +1,74 @@
+﻿@model WebAppMuffins.Models.Orders
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Orders</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MuffinItems.Muffinname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MuffinItems.Muffinname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumMuffins)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumMuffins)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.basicCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.basicCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discamount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discamount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VatAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VatAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalCost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
